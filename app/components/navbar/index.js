@@ -23,7 +23,12 @@ export default () => (
           >
             About
           </Link>
-        </li>
+    </li>
+    <li>
+    <Link to="/contact/" className={styles.a} activeClassName={styles.active}>
+    Contact
+    </Link>
+    </li>
       </ul>
     </div>
   </div>
