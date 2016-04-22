@@ -13,13 +13,21 @@ export default class App extends Component {
   }
 
   render() {
+    let helmet;
+    if (location.pathname.startsWith('/tests')) {
+      helmet = (
+        <Helmet link={[{
+          rel: 'icon', href: '/favicon.png',
+        },
+                       {rel:'stylesheet', href: 'mocha/mocha.css'}
+        ]}
+        script={[{src: '/mocha/mocha.js'}]} /> )
+    } else {
+      helmet = <Helmet link={[{rel: 'icon', href: '/favicon.png'}]} />
+    }
     return (
       <div className={styles.main}>
-        <Helmet
-          link={[{
-            rel: 'icon', href: '/favicon.png',
-          }]}
-        />
+        {helmet}
         <Navbar />
         { this.props.children }
         <Footer />
