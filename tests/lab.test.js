@@ -1,5 +1,3 @@
-import { describe, it } from 'Mocha';
-
 describe("Proof of concept test", () => {
   console.log('POC test definition');
   it("Should be run", () => {
