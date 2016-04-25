@@ -12,6 +12,7 @@
     "test": "npm run lint"
   },
   "dependencies": {
+    "immutable": "^3.8.1",
     "roc-package-web-app-react": "^1.0.0-alpha",
     "roc-plugin-test-mocha-karma-webpack": "^1.0.0-alpha.4"
   },
