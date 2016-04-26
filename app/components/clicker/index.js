@@ -19,14 +19,14 @@ function mapDispatchToProps(dispatch) {
 @connect(mapStateToProps, mapDispatchToProps)
 export default class Clicker extends React.Component {
   static propTypes = {
-    clicker: React.PropTypes.number.isRequired,
+    clicker: React.PropTypes.object.isRequired,
     click: React.PropTypes.func.isRequired,
   }
 
   render() {
     return (
       <div className={styles.main}>
-        <span className={styles.clicker}>{ this.props.clicker } +</span>
+        <span className={styles.clicker}>{ this.props.clicker.get('sum') } +</span>
         <input className={styles.input} ref="incInput" type="text" defaultValue="1" />
 
         <button onClick={ () => {
