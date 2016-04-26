@@ -6,6 +6,13 @@ import Clicker from '../../components/clicker';
 
 import styles from './style.scss';
 
+/* import { OAuthSignInButton } from "redux-auth/material-ui-theme"; */
+// ID 1000187135783-30pmgfd20n59jrjh0me9hhn2gfcajfnk.apps.googleusercontent.com
+// Secret x4RWkLqdSpHZMI00ylTqLuBA
+// Callback http://localhost:3030/g_auth
+
+import mui from 'material-ui';
+
 export default class Start extends Component {
   render() {
     return (
@@ -23,6 +30,9 @@ export default class Start extends Component {
             <strong>Feel free to delete</strong> the generated code and components, they are only
             here for your reference.
           </p>
+
+      <h4>You</h4>
+      <mui.RaisedButton label="Super Secret Password"/>
 
           <h4>Routing</h4>
           <p>

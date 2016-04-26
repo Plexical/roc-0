@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "immutable": "^3.8.1",
+    "material-ui": "^0.14.4",
+    "react-tap-event-plugin": "^1.0.0",
     "roc-package-web-app-react": "^1.0.0-alpha",
     "roc-plugin-test-mocha-karma-webpack": "^1.0.0-alpha.4"
   },
