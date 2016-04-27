@@ -5,11 +5,12 @@ import App from '../screens/app';
 import Start from '../screens/start';
 import About from '../screens/about';
 import Contact from '../screens/contact';
+import once from 'lodash';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 export default () => {
-  injectTapEventPlugin();
+  once(() => injectTapEventPlugin())
   return (<Route component={ App }>
     <IndexRoute component={ Start } />
     <Route component={ About } path="/about/" />
