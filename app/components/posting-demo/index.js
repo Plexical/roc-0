@@ -1,5 +1,7 @@
 import React from 'react';
 
+import * as sfApi from '../../lib/sugar-fetch';
+
 import {FlatButton,
         Card,
         CardHeader,
@@ -13,7 +15,10 @@ export default class Poster extends React.Component {
   }
 
   doPost() {
-    console.log('Fetch, then update store..');
+    sfApi.post('http://httpbin.org/post', {foo: 'bar'})
+         .then ((data) => {
+           console.log('JSON echo', data.json);
+         })
   }
 
   render() {
