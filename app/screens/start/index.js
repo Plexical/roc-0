@@ -3,10 +3,9 @@
 import React, { Component } from 'react';
 
 import Clicker from '../../components/clicker';
+import Poster from '../../components/posting-demo'
 
 import styles from './style.scss';
-
-import {RaisedButton} from 'material-ui';
 
 export default class Start extends Component {
   render() {
@@ -56,6 +55,8 @@ export default class Start extends Component {
           </p>
 
           <Clicker />
+
+      <Poster/>
 
           <h4>Get styling</h4>
           <p>
