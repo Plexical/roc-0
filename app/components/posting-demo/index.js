@@ -9,6 +9,7 @@ import {FlatButton,
         TextField,
         Button,
         CircularProgress,
+        FontIcon,
         Checkbox} from 'material-ui';
 
 export default class Poster extends React.Component {
@@ -55,14 +56,15 @@ export default class Poster extends React.Component {
                       mode="indeterminate" color="red" size={0.4}/>
 
     } else {
-      loadingState = <span style={{color: 'green', marginRight: '4px'}}>
-        DONE
-      </span>
+      loadingState = <FontIcon className="material-icons" color="green">
+        done
+      </FontIcon>
     }
     return (
       <Card>
         <CardHeader title="API Calling"/>
         {loadingState}
+
         <span>{"http://httpbin.org/ "}</span>
         <TextField ref="sendUri"/>
         <FlatButton onClick={ () => (this.doPost())}>POST</FlatButton>
