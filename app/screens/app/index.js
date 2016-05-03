@@ -7,6 +7,8 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import styles from './style.scss';
 
+const gfontBase = 'https://fonts.googleapis.com';
+
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
@@ -19,7 +21,9 @@ export default class App extends Component {
             link={[
               {rel: 'icon', href: '/favicon.png'},
               {rel: 'stylesheet',
-               href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+               href: `${gfontBase}/icon?family=Material+Icons`},
+              {rel: 'stylesheet',
+               href: `${gfontBase}/css?family=Roboto&subset=latin,latin-ext`}
             ]}/>
         <Navbar />
         { this.props.children }
