@@ -16,10 +16,11 @@ export default class App extends Component {
     return (
       <div className={styles.main}>
         <Helmet
-          link={[{
-            rel: 'icon', href: '/favicon.png',
-          }]}
-        />
+            link={[
+              {rel: 'icon', href: '/favicon.png'},
+              {rel: 'stylesheet',
+               href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+            ]}/>
         <Navbar />
         { this.props.children }
         <Footer />
