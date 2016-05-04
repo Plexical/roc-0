@@ -9,7 +9,8 @@
     "dev": "roc dev",
     "start": "roc start",
     "lint": "eslint .",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "cli-test": "babel-node ./scripts/browser-free.js"
   },
   "dependencies": {
     "immutable": "^3.8.1",
