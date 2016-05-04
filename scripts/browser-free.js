@@ -3,6 +3,7 @@ import Mocha from 'mocha';
 import chai from 'chai';
 
 chai.should();
+chai.use(require('chai-immutable'));
 chai.use(require('chai-as-promised'));
 
 const mocha = new Mocha({

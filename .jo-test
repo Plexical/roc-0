@@ -1,3 +1,2 @@
 #!/bin/sh
-echo 'rest' $@
 ./node_modules/.bin/babel-node scripts/browser-free.js $@
