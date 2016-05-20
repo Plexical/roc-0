@@ -1,3 +1,2 @@
 #!/bin/sh
 ./node_modules/.bin/babel-node scripts/browser-free.js $@
-# fake-contrib
