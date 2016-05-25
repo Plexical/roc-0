@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import Clicker from '../../components/clicker';
 import Poster from '../../components/posting-demo'
+import SemanticUIDummy from '../../components/semantic';
 
 import styles from './style.scss';
 
@@ -57,6 +58,8 @@ export default class Start extends Component {
           <Clicker />
 
       <Poster/>
+
+      <SemanticUIDummy/>
 
           <h4>Get styling</h4>
           <p>
