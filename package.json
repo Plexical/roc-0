@@ -17,7 +17,8 @@
     "material-ui": "^0.14.4",
     "react-tap-event-plugin": "^1.0.0",
     "roc-package-web-app-react": "^1.0.0-alpha",
-    "roc-plugin-test-mocha-karma-webpack": "^1.0.0-alpha.5"
+    "roc-plugin-test-mocha-karma-webpack": "^1.0.0-alpha.5",
+    "semantic-ui": "^2.1.8"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -30,6 +31,7 @@
     "eslint": "2.6.0",
     "eslint-config-airbnb": "6.2.0",
     "eslint-plugin-react": "4.2.3",
+    "gulp": "^3.9.1",
     "marked": "^0.3.5",
     "roc-package-web-app-react-dev": "^1.0.0-alpha",
     "roc-plugin-style-sass": "^1.0.0-alpha",

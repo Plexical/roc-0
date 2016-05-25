@@ -18,13 +18,22 @@ export default class App extends Component {
     return (
       <div className={styles.main}>
         <Helmet
+            script={[
+              {"src": "https://code.jquery.com/jquery-1.10.2.min.js",
+               "type": "text/javascript"},
+              {"src": "/semantic/semantic.min.js",
+               "type": "text/javascript"},
+            ]}
             link={[
               {rel: 'icon', href: '/favicon.png'},
               {rel: 'stylesheet',
                href: `${gfontBase}/icon?family=Material+Icons`},
               {rel: 'stylesheet',
-               href: `${gfontBase}/css?family=Roboto&subset=latin,latin-ext`}
-            ]}/>
+               href: '/semantic/semantic.min.css'},
+              {rel: 'stylesheet',
+               href: `${gfontBase}/css?family=Roboto&subset=latin,latin-ext`},
+            ]}
+        />
         <Navbar />
         { this.props.children }
         <Footer />
