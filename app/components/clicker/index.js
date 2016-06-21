@@ -4,7 +4,14 @@ import { connect } from 'react-redux';
 
 import { click } from '../../redux/clicker';
 
-import styles from './style.scss';
+import { isBrowser } from '../../lib/helpers';
+
+let styles;
+if(isBrowser()) {
+  styles = require('./style.scss');
+} else {
+  styles = {main: 'tbd-server-main'}
+}
 
 function mapStateToProps(state) {
   return {
