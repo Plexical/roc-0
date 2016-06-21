@@ -18,7 +18,6 @@ if(grepWords.length > 0) {
 }
 
 mocha.addFile('./cli-tests/redux.clicker.test.js');
-mocha.addFile('./cli-tests/redux.network.test.js');
 
 /* Runs & ensures the number of failures is reported as process exit
  value (usable when run non-interactively: $? == 0 -> no failures,
